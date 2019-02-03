@@ -6,16 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1250</width>
-    <height>548</height>
+    <width>1274</width>
+    <height>735</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Batedor de Meta 2.0</string>
-  </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>icons/icon.png</normaloff>icons/icon.png</iconset>
+   <string>Video Stack Tool</string>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
@@ -42,119 +38,16 @@
       <property name="horizontalSpacing">
        <number>5</number>
       </property>
-      <item row="0" column="0">
-       <widget class="QPushButton" name="addProjectButton">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="toolTip">
-         <string>Novo projeto de vídeo</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>icons/ic_add_circle_outline_48pt_3x.png</normaloff>icons/ic_add_circle_outline_48pt_3x.png</iconset>
-        </property>
-        <property name="flat">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="3">
-       <widget class="QPushButton" name="removeFileButton">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="toolTip">
-         <string>Remover vídeo do projeto</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>icons/ic_remove_circle_outline_48pt_3x.png</normaloff>icons/ic_remove_circle_outline_48pt_3x.png</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>20</width>
-          <height>20</height>
-         </size>
-        </property>
-        <property name="flat">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="removeProjectButton">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="toolTip">
-         <string>Remover projeto</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>icons/ic_remove_circle_outline_48pt_3x.png</normaloff>icons/ic_remove_circle_outline_48pt_3x.png</iconset>
-        </property>
-        <property name="flat">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="3">
-       <widget class="QPushButton" name="upArrowButton">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="toolTip">
-         <string>Passar para cima</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>icons/ic_arrow_upward_black_48dp.png</normaloff>icons/ic_arrow_upward_black_48dp.png</iconset>
-        </property>
-        <property name="flat">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="3">
-       <widget class="QPushButton" name="addFileButton">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="toolTip">
-         <string>Adicionar arquivo ao projeto</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>icons/ic_add_circle_outline_48pt_3x.png</normaloff>icons/ic_add_circle_outline_48pt_3x.png</iconset>
-        </property>
-        <property name="flat">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="3">
+      <item row="9" column="3">
        <widget class="QPushButton" name="downArrowButton">
         <property name="enabled">
          <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
         <property name="toolTip">
          <string>Passar para baixo</string>
@@ -171,7 +64,7 @@
         </property>
        </widget>
       </item>
-      <item row="6" column="3">
+      <item row="11" column="3">
        <widget class="QPushButton" name="renderButton">
         <property name="enabled">
          <bool>false</bool>
@@ -206,37 +99,204 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="2" rowspan="7">
-       <widget class="QTableWidget" name="videoTableWidget">
-        <property name="mouseTracking">
+      <item row="6" column="3">
+       <widget class="QPushButton" name="addFileButton">
+        <property name="enabled">
          <bool>true</bool>
         </property>
-        <column>
-         <property name="text">
-          <string>Nome</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Ínicio em</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Final em</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Cortar em</string>
-         </property>
-        </column>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Adicionar arquivo ao projeto</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/ic_add_circle_outline_48pt_3x.png</normaloff>icons/ic_add_circle_outline_48pt_3x.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QPushButton" name="removeFileButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Remover vídeo do projeto</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/ic_remove_circle_outline_48pt_3x.png</normaloff>icons/ic_remove_circle_outline_48pt_3x.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QPushButton" name="upArrowButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Passar para cima</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/ic_arrow_upward_black_48dp.png</normaloff>icons/ic_arrow_upward_black_48dp.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="addProjectButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Novo projeto de vídeo</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/ic_add_circle_outline_48pt_3x.png</normaloff>icons/ic_add_circle_outline_48pt_3x.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="removeProjectButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Remover projeto</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/ic_remove_circle_outline_48pt_3x.png</normaloff>icons/ic_remove_circle_outline_48pt_3x.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="3">
+       <widget class="QPushButton" name="cutButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Corta vídeo no ponto selecionado</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/ic_content_cut_48pt_3x.png</normaloff>icons/ic_content_cut_48pt_3x.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="timeTextEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Back</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="playButton">
+          <property name="text">
+           <string>Play/Pause</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="forwardButton">
+          <property name="text">
+           <string>Foward</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2" rowspan="6" colspan="2">
+       <widget class="QLabel" name="previewLabel">
+        <property name="text">
+         <string>Preview</string>
+        </property>
        </widget>
       </item>
       <item row="0" column="1" rowspan="7">
        <widget class="QTableWidget" name="projectTableWidget">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -258,25 +318,8 @@
         </column>
        </widget>
       </item>
-      <item row="4" column="3">
-       <widget class="QPushButton" name="cutButton">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="toolTip">
-         <string>Corta vídeo no ponto selecionado</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>icons/ic_content_cut_48pt_3x.png</normaloff>icons/ic_content_cut_48pt_3x.png</iconset>
-        </property>
-        <property name="flat">
-         <bool>true</bool>
-        </property>
-       </widget>
+      <item row="7" column="1" rowspan="5" colspan="2">
+       <widget class="QWidget" name="widget" native="true"/>
       </item>
      </layout>
     </item>
@@ -287,28 +330,28 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1250</width>
-     <height>26</height>
+     <width>1274</width>
+     <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuArquivo">
+   <widget class="QMenu" name="menuFiles">
     <property name="title">
-     <string>Arquivo</string>
+     <string>Files</string>
     </property>
     <addaction name="actionNewProj"/>
     <addaction name="actionNewVideo"/>
     <addaction name="separator"/>
-    <addaction name="actionFechar"/>
+    <addaction name="actionClose"/>
    </widget>
-   <widget class="QMenu" name="menuSobre">
+   <widget class="QMenu" name="menuAbout">
     <property name="title">
-     <string>Opções</string>
+     <string>Options</string>
     </property>
     <addaction name="actionConfig"/>
-    <addaction name="actionSobre"/>
+    <addaction name="actionAbout"/>
    </widget>
-   <addaction name="menuArquivo"/>
-   <addaction name="menuSobre"/>
+   <addaction name="menuFiles"/>
+   <addaction name="menuAbout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionLimpar">
@@ -316,40 +359,36 @@
     <string>Limpar tudo</string>
    </property>
   </action>
-  <action name="actionFechar">
+  <action name="actionClose">
    <property name="text">
-    <string>Fechar</string>
+    <string>Close</string>
    </property>
   </action>
   <action name="actionConfig">
    <property name="text">
-    <string>Configurações</string>
+    <string>Settings</string>
    </property>
   </action>
-  <action name="actionSobre">
+  <action name="actionAbout">
    <property name="text">
-    <string>Sobre</string>
+    <string>About</string>
    </property>
   </action>
   <action name="actionNewProj">
    <property name="text">
-    <string>Adicionar novo projeto</string>
+    <string>Add new project</string>
    </property>
   </action>
   <action name="actionNewVideo">
    <property name="text">
-    <string>Adicionar vídeos a um projeto</string>
+    <string>Add video sample to project</string>
    </property>
   </action>
  </widget>
  <tabstops>
   <tabstop>projectTableWidget</tabstop>
-  <tabstop>videoTableWidget</tabstop>
   <tabstop>addProjectButton</tabstop>
   <tabstop>removeProjectButton</tabstop>
-  <tabstop>addFileButton</tabstop>
-  <tabstop>removeFileButton</tabstop>
-  <tabstop>downArrowButton</tabstop>
  </tabstops>
  <resources/>
  <connections/>
